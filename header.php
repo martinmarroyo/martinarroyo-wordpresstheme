@@ -31,6 +31,7 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'martinarroyo' ); ?></a>
 
 	<header id="masthead" class="site-header">
+		<div class="header-wrap">
 		<div class="branding-wrap">
 		<div class="site-branding">
 			<?php
@@ -91,4 +92,5 @@
 		</div><!-- overlay -->
 		</nav><!-- #site-navigation -->
 	</div><!--.nav-wrap -->
+</div><!-- .header-wrap -->
 	</header><!-- #masthead -->

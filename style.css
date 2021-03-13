@@ -993,10 +993,10 @@ textarea {
 
 /***** MOBILE DESIGN ******************/
 
-
+/* Change marquee font-size on smaller screens to fix horizontal scrolling issues */
 @media only screen and (max-width: 450px){
 	.marquee-line{
-		font-size: x-large;
+		font-size: x-large !important;
 	}
 }
 /* Extra small devices (phones, 600px and down) */
@@ -1027,7 +1027,7 @@ textarea {
 		display: inline-block;
 	}
 	.branding-wrap{
-		float: left;		
+		float: left;
 	}
 	.nav-wrap{
 		float: right;
@@ -1133,7 +1133,7 @@ textarea {
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
-	
+
 	.overlay a {
 		font-size: 20px;
 	}
