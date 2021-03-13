@@ -20,6 +20,9 @@
 	<?php wp_head(); ?>
 	<!-- Font Awesome -->
 	<script src="https://kit.fontawesome.com/d546ab0744.js" crossorigin="anonymous"></script>
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body <?php body_class(); ?>>

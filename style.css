@@ -993,6 +993,12 @@ textarea {
 
 /***** MOBILE DESIGN ******************/
 
+
+@media only screen and (max-width: 450px){
+	.marquee-line{
+		font-size: x-large;
+	}
+}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
@@ -1002,7 +1008,7 @@ textarea {
 	}
 	/* Change size of typed words in marquee */
 	.marquee-line {
-		font-size: xx-large !important;
+		font-size: xx-large;
 	}
 
 	#greeting, #about-blurb, #secondary, #colophon, /*widgets and footer*/
@@ -1124,14 +1130,20 @@ textarea {
 		margin-left: 2em;
 	}
 }
+
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
-	.overlay a {font-size: 20px}
+	
+	.overlay a {
+		font-size: 20px;
+	}
 	.overlay .closebtn {
 		font-size: 40px;
 		top: 15px;
 		right: 35px;
 	}
+
+}
 
 	/* Small devices (portrait tablets and large phones, 600px and up) */
 	@media only screen and (min-width: 600px) {}
