@@ -49,17 +49,43 @@
 		</div><!-- .site-branding -->
 	</div><!-- .branding-wrap -->
 	<div class="nav-wrap">
+
 		<nav id="site-navigation" class="main-navigation">
+
+
 			<!-- button to show overlay -->
-			<button id="hamburger-menu" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><i class="fas fa-bars"></i></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
+			<button id="hamburger-menu" class="menu-toggle" onclick="openNav()" aria-controls="primary-menu" aria-expanded="false"><i class="fas fa-bars"></i></button>
+			<!-- Mobile menu overlay -->
+			<div id="myNav" class="overlay">
+			<!-- button to close overlay -->
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<div class="overlay-content">
+				<div class="overlay-menu-items">
+					<?php
+						wp_nav_menu(
+							array(
+								'theme_location' => 'menu-1',
+								'menu_id'        => 'primary-menu',
+							)
+						);
+						?>
+				</div>
+			<div class="socials-overlay"> LinkedIn | Github | Twitter | Instagram | Youtube </div>
+		</div> <!-- overlay-content -->
+		<script>
+			/* Open when someone clicks on the span element */
+			function openNav() {
+				/* Toggle navigation menu */
+				document.getElementById("primary-menu").style.display ="block";
+				document.getElementById("myNav").style.width = "100%";
+			}
+
+			/* Close when someone clicks on the "x" symbol inside the overlay */
+			function closeNav() {
+				document.getElementById("myNav").style.width = "0%";
+			}
+		</script>
+		</div><!-- overlay -->
 		</nav><!-- #site-navigation -->
 	</div><!--.nav-wrap -->
 	</header><!-- #masthead -->
