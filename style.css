@@ -999,9 +999,11 @@ textarea {
 	}
 	.branding-wrap{
 		float: left;
+		
 	}
 	.nav-wrap{
 		float: right;
+		
 	}
 	.site-title{
 		margin-top: -12px;
@@ -1077,6 +1079,22 @@ textarea {
 		display: block;
 		text-align: center;
 		margin-top: 2em;
+	}
+
+	/* Style widgets*/
+	#recent-posts-2, #archives-2, #categories-2{
+		border: 1px solid black;
+	}
+	h2.widget-title{
+		clear:both;
+		margin-top: -20px;
+		text-align: center;
+		background: white;
+		width: 70%;
+		margin-left: 2.5rem;
+	}
+	.widget {
+		margin: 1.5em 3em 1.5em 2em;
 	}
 
 }

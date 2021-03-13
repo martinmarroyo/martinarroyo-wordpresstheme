@@ -154,6 +154,7 @@
 	.marquee-line{
 	  font-size: xxx-large;
 	}
+	
 	#web-dev-line{
 	  font-family: Jura;
 	  font-weight: bold;
