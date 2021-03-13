@@ -138,7 +138,7 @@
 	    border-color: transparent;
 	  }
 	}
-
+	/* TODO: Move these into the general style sheet */
 	.marquee-fas{
 	  margin-right:2rem;
 	}

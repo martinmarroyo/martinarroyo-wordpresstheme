@@ -976,7 +976,9 @@ textarea {
 @media only screen and (max-width: 600px) {
 
 	/*** Front/Home Page ************/
-
+	#primary {
+		margin: 0 2em;
+	}
 	/* Change size of typed words in marquee */
 	.marquee-line {
 		font-size: xx-large !important;
@@ -998,12 +1000,11 @@ textarea {
 		display: inline-block;
 	}
 	.branding-wrap{
-		float: left;
-		
+		float: left;		
 	}
 	.nav-wrap{
 		float: right;
-		
+		/*margin-right: .25em;*/
 	}
 	.site-title{
 		margin-top: -12px;
@@ -1081,7 +1082,7 @@ textarea {
 		margin-top: 2em;
 	}
 
-	/* Style widgets*/
+	/****************** WIDGETS ********************/
 	#recent-posts-2, #archives-2, #categories-2{
 		border: 1px solid black;
 	}
@@ -1097,6 +1098,10 @@ textarea {
 		margin: 1.5em 3em 1.5em 2em;
 	}
 
+	/****************** FOOTER ********************/
+	#colophon {
+		margin-left: 2em;
+	}
 }
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
