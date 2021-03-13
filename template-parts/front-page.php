@@ -38,16 +38,16 @@
 	}
 
 	.css-typing h2:nth-child(3) {
-	  width: 11.5em;
-	  opacity: 0;
-	  -webkit-animation: type3 3.25s steps(30, end), blink .5s step-end infinite alternate;
-	  animation: type3 3.25s steps(30, end), blink .5s step-end infinite alternate;
+	  width: 8.25em;
+	  opacity: 0;	
+	  -webkit-animation: type3 3.25s steps(30, end), blink .5s step-end alternate infinite;
+	  animation: type3 3.25s steps(30, end), blink .5s step-end alternate infinite;
 	  -webkit-animation-delay: 8s;
 	  animation-delay: 8s;
-	  -webkit-animation-fill-mode: forwards;
+	  webkit-animation-fill-mode: forwards;
 	  animation-fill-mode: forwards;
 	}
-
+	/* TODO: Figure out how to remove cursor after last line */
 	@keyframes type {
 	  0% {
 	    width: 0;
@@ -114,6 +114,7 @@
 	  100% {
 	    opacity: 1;
 	  }
+	  
 	}
 
 	@-webkit-keyframes type3 {
@@ -132,33 +133,22 @@
 	  50% {
 	    border-color: transparent;
 	  }
+	  100%{
+		  border: none;
+	  }
 	}
 	@-webkit-keyframes blink {
 	  50% {
 	    border-color: transparent;
 	  }
-	}
-	/* TODO: Move these into the general style sheet */
-	.marquee-fas{
-	  margin-right:2rem;
-	}
-
-	.marquee{
-	  display: block;
-	  text-align: left;
+	  100%{
+		  border: none;
+	  }
 	}
 
-	.entry-content{
-	  height: 100%;
-	}
-	.marquee-line{
-	  font-size: xxx-large;
-	}
+
 	
-	#web-dev-line{
-	  font-family: Jura;
-	  font-weight: bold;
-	}
+
 	</style>
 
 	</head>
